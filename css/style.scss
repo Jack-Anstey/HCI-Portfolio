@@ -1,2 +1,46 @@
 /* This is for any additional style applied on top of what's already avalible in Bootstrap */
 
+.article {
+    border: {
+        style: solid;
+        width: 3px;
+        color: coral;
+        radius: 10px;
+    }
+    transition: 200ms;
+    &:hover {
+        transition: 200ms;
+        // filter: drop-shadow(0 0 0.75rem crimson);
+        box-shadow: 0 0 20px black;
+    }
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.unstyled {
+    text-decoration: none;
+    color: inherit;
+    &:link{
+		text-decoration: none;
+        color: inherit;
+	}
+
+	&:hover{
+		text-decoration: none;
+        color: inherit;
+	}
+
+	&:visited{
+		text-decoration: none;
+        color: inherit;
+	}
+
+	&:active{
+		text-decoration: none;
+        color: inherit;
+	}
+}
+
