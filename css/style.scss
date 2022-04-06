@@ -3,6 +3,17 @@
 /* Variables */
 $medium-grey: #e6e6e6;
 
+
+.edges {
+    border: {
+        left-style: solid;
+        right-style: solid;
+        left-color: $medium-grey;
+        right-color: $medium-grey;
+        width: 1px;
+    }
+}
+
 /**
 * Defines the boxes that host the images and descriptions.
 * Contains animations too
