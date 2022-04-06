@@ -3,7 +3,9 @@
 /* Variables */
 $medium-grey: #e6e6e6;
 
-
+/**
+* Make border edges just like how they are on Medium
+*/
 .edges {
     border: {
         left-style: solid;
@@ -25,9 +27,9 @@ $medium-grey: #e6e6e6;
         color: $medium-grey;
         radius: 10px;
     }
-    transition: 200ms;
+    transition: all .2s ease-in-out; //shrink and get rid of shadow
     &:hover {
-        transition: 200ms;
+        transform: scale(1.05); //grow!
         // filter: drop-shadow(0 0 0.75rem crimson);
         // box-shadow: 0 0 20px $medium-grey;
         //from: https://getcssscan.com/css-box-shadow-examples --> #70
@@ -54,7 +56,8 @@ $medium-grey: #e6e6e6;
 }
 
 /**
-* Remove the style of links in all circumstances. Used for the boxes
+* Remove the style of links in all circumstances. Used for the text inside boxes
+* Much more thorough than the default text-decoration-none option in bootstrap
 */
 .unstyled {
     text-decoration: none;
