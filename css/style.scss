@@ -1,25 +1,50 @@
 /* This is for any additional style applied on top of what's already avalible in Bootstrap */
 
+/* Variables */
+$medium-grey: #e6e6e6;
+
+/**
+* Defines the boxes that host the images and descriptions.
+* Contains animations too
+*/
 .article {
     border: {
         style: solid;
         width: 3px;
-        color: coral;
+        color: $medium-grey;
         radius: 10px;
     }
     transition: 200ms;
     &:hover {
         transition: 200ms;
         // filter: drop-shadow(0 0 0.75rem crimson);
-        box-shadow: 0 0 20px black;
+        // box-shadow: 0 0 20px $medium-grey;
+        //from: https://getcssscan.com/css-box-shadow-examples --> #70
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    padding: 10px;
+}
+
+/**
+* Image macros! Defines what happens to each image
+*/
+.macro {
+    border: {
+        radius: 15%;
     }
 }
 
+/**
+* Have the text wrap instead of being the normal justify left
+*/
 .justify-text {
     text-align: justify;
     text-justify: inter-word;
 }
 
+/**
+* Remove the style of links in all circumstances. Used for the boxes
+*/
 .unstyled {
     text-decoration: none;
     color: inherit;
