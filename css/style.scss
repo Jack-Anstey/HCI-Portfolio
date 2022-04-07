@@ -10,8 +10,7 @@ $medium-grey: #e6e6e6;
     border: {
         left-style: solid;
         right-style: solid;
-        left-color: $medium-grey;
-        right-color: $medium-grey;
+        color: $medium-grey;
         width: 1px;
     }
 }
@@ -29,7 +28,7 @@ $medium-grey: #e6e6e6;
     }
     transition: all .2s ease-in-out; //shrink and get rid of shadow
     &:hover {
-        transform: scale(1.05); //grow!
+        transform: scale(1.1); //grow!
         // filter: drop-shadow(0 0 0.75rem crimson);
         // box-shadow: 0 0 20px $medium-grey;
         //from: https://getcssscan.com/css-box-shadow-examples --> #70
@@ -45,6 +44,7 @@ $medium-grey: #e6e6e6;
     border: {
         radius: 15%;
     }
+    padding: 5px;
 }
 
 /**
