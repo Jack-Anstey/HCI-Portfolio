@@ -51,8 +51,10 @@ $medium-grey: #e6e6e6;
 * Have the text be justified like in word instead of the normal justify left
 */
 .justify-text {
-    text-align: justify;
-    text-justify: inter-word;
+    text: {
+        align: justify;
+        justify: inter-word;
+    }
 }
 
 /**
@@ -83,3 +85,26 @@ $medium-grey: #e6e6e6;
 	}
 }
 
+/**
+* Add some slick style to the github logo
+*/
+.gitstyle {
+    font: {
+        size: 7rem;
+    }
+    border: {
+        style: solid;
+        width: 3px;
+        color: $medium-grey;
+        radius: 50%;
+    }
+    transition: all .2s ease-in-out; //shrink and get rid of shadow
+    &:hover {
+        transform: scale(1.1); //grow!
+        // filter: drop-shadow(0 0 0.75rem crimson);
+        // box-shadow: 0 0 20px $medium-grey;
+        //from: https://getcssscan.com/css-box-shadow-examples --> #70
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    padding: 10px;
+}
