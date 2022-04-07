@@ -7,7 +7,7 @@ $medium-grey: #e6e6e6;
 * Make border edges just like how they are on Medium
 */
 .edges {
-    border: {
+    border: { //only color the left and right sides
         left-style: solid;
         right-style: solid;
         color: $medium-grey;
@@ -41,14 +41,14 @@ $medium-grey: #e6e6e6;
 * Image macros! Defines what happens to each image
 */
 .macro {
-    border: {
+    border: { //add some rounded corners
         radius: 15%;
     }
     padding: 5px;
 }
 
 /**
-* Have the text wrap instead of being the normal justify left
+* Have the text be justified like in word instead of the normal justify left
 */
 .justify-text {
     text-align: justify;

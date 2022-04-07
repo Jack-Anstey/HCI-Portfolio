@@ -1,6 +1,6 @@
 # Human Computer Interaction Portfolio
 
-## Welcome to my portfolio!
+## Welcome to my Portfolio!
 This project was developed for Emory University's CS 485: Human Computer Interaction course.
 
 ## About
