@@ -131,6 +131,18 @@ $medium-grey: #e6e6e6;
     padding: 10px;
 }
 
+/**
+* Text indent as if you pressed tab on your keyboard
+*/
 .indent {
     text-indent: 30px;
+}
+
+#me {
+    border: { //add some rounded corners
+        radius: 20px;
+        style: solid;
+        width: 3px;
+        color: $medium-grey;
+    }
 }
