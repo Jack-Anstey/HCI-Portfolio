@@ -3,6 +3,14 @@
 /* Variables */
 $medium-grey: #e6e6e6;
 
+
+/**
+* Make scrolling smooth
+*/
+html {
+    scroll-behavior: smooth;
+}
+
 /**
 * Make border edges just like how they are on Medium
 */
