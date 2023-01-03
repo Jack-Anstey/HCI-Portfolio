@@ -10,6 +10,3 @@ This project was written entirely by me and uses a combination of HTML 5, Bootst
 
 ## My Design Manifesto
 This website also hosts my design manifesto where I describe my current design process and my learning throughout this course.
-
-## Host Location
-The code will be hosted on my personal website [here](https://jackanstey.com/portfolio.html). Enjoy!
